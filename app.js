@@ -69,7 +69,7 @@ const dinacharyaRoutes = require("./routes/dinacharya");
 const yogaRoutes = require("./routes/yoga");
 const saarathiRoutes = require("./routes/saarathi");
 
-// ✅ Use routes
+//  Use routes
 app.use("/", userRoutes); // login & register remain open
 
 app.use("/",indexRoutes);
@@ -77,7 +77,7 @@ app.use("/dinacharya", isLoggedIn, dinacharyaRoutes);
 app.use("/yoga", isLoggedIn, yogaRoutes);
 app.use("/saarathi", isLoggedIn, saarathiRoutes);
 
-// ✅ Start server
+//  Start server
 app.listen(3000, () => {
     console.log("Server Started on 3000");
 });
